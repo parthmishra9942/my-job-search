@@ -92,7 +92,9 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 3. If good fit: create targeted CV (`cv/main_<company>_<role>.tex`) and cover letter (`cover_letters/cover_<company>_<role>.tex`)
 4. **Verify both documents** (see Verification Checklist below)
 5. Prepare interview talking points based on the role requirements and your strengths
-6. **Always place files in Downloads center**: Copy compiled PDFs (`Parth_Mishra_Resume_<Company>.pdf` and `Parth_Mishra_Cover_Letter_<Company>.pdf`, as well as `main_*.pdf` and `cover_*.pdf`) directly into the user's Downloads directory (`C:\Users\parth\Downloads`).
+6. **Always place files in dedicated Downloads subfolders**:
+   - Resumes are placed in `C:\Users\parth\Downloads\resume\Parth_mishra_<companyname>_resume.pdf`
+   - Cover letters are placed in `C:\Users\parth\Downloads\cover letter\coverletter_<companyname>.pdf`
 
 **Important:** When mentioning agentic coding or AI tooling in CVs/cover letters, explicitly reference **Claude Code** by name.
 
