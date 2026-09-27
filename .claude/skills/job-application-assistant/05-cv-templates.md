@@ -59,7 +59,7 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Parth Mishra - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -69,13 +69,13 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 \usepackage{import}
 
 % Personal data
-\name{[FIRST_NAME]}{[LAST_NAME]}
+\name{Parth}{Mishra}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[YOUR_ADDRESS]}{}{}
-\phone[mobile]{[YOUR_PHONE]}
-\email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\address{Bhopal, India}{}{}
+\phone[mobile]{+91 7985982208}
+\email{parthmishra9942@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/parth-mishra-4b7578242}{LinkedIn}, \href{https://github.com/parthmishra9942}{GitHub}, \href{https://ai-portfolio-beige-xi.vercel.app/}{Portfolio}}
 
 \begin{document}
 \makecvtitle
@@ -137,11 +137,11 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Software Development Engineer / Full-Stack Developer roles:**
+> Final-year Computer Science Engineering student with hands-on experience delivering full-stack web and mobile applications (React, React Native, Node.js/Express, PostgreSQL) and deploying on cloud platforms. Proven track record of shipping zero-regression production UI at Craftedge Academy and proactively resolving production security and secret exposure risks. Strong foundation in Data Structures & Algorithms with consistent pattern-wise LeetCode practice.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For AI/ML & Agentic AI roles:**
+> AI/ML-focused Software Engineer and Oracle Certified Agentic AI Foundations Associate with direct experience building end-to-end LLM applications, RAG pipelines, and conversational voice AI agents. Built an in-memory vector database from scratch in Python implementing HNSW and KD-Tree indexing with local LLM integration via Ollama, alongside production Claude API integrations. Combines strong full-stack skills with deep curiosity for autonomous agent architectures.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

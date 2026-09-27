@@ -1,0 +1,22 @@
+description = "Profile Onboarding"
+prompt = """
+The canonical, single-source-of-truth instructions for this workflow live in
+this project at `.claude/commands/setup.md`. Read that file in full and follow it exactly,
+step by step, using this project's normal file-editing and shell tools instead
+of any Claude-Code-only tool it may name (e.g. use your own file read/write and
+shell-execution tools in place of `Read`/`Write`/`Edit`/`Bash`; use your own web
+fetch/search tools in place of `WebFetch`/`WebSearch`). If the file describes
+spawning a second reviewing agent and your environment supports subagents, do
+so; otherwise, perform that review pass yourself as a distinct, explicit step
+before presenting final output.
+
+@{.claude/commands/setup.md}
+
+---
+
+Wherever the instructions above reference `$ARGUMENTS`, substitute the
+following text, exactly as the user typed it (this may be empty if the
+command takes no arguments):
+
+{{args}}
+"""

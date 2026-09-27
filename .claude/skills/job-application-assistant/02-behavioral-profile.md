@@ -4,51 +4,46 @@ framework_version: 1.0.0
 
 # Behavioral Profile
 
-<!-- SETUP: This file is populated by running /setup -->
-<!-- You can use results from PI, DISC, Myers-Briggs, StrengthsFinder, or a self-assessment -->
-
 ## Overview
-[YOUR_NAME]'s behavioral assessment identifies them as a **[PROFILE_TYPE]** pattern. [1-2 SENTENCE_SUMMARY].
+Parth Mishra demonstrates a **Builder-Collaborator** profile marked by high dedication, consistency, disciplined execution, and strong teamwork/leadership. He combines end-to-end technical curiosity (building full-stack apps, vector DBs from scratch, and AI agents) with proactive ownership, demonstrated by immediately identifying and mitigating security credential risks and shipping zero-regression production UI.
 
 ## Core Behavioral Drives
 
 | Drive | Level | Meaning |
 |-------|-------|---------|
-| [DRIVE_1] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_2] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_3] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_4] | [LEVEL] | [DESCRIPTION] |
+| Execution & Consistency | High | Follows structured habits (daily pattern-wise LeetCode practice, thorough testing, dependable delivery). |
+| Ownership & Initiative | High | Takes personal accountability for production quality and security; acts immediately upon spotting flaws or risks. |
+| Collaboration & Teamwork | High | Communicates clearly, values code reviews and QA processes, and thrives in cross-functional team settings. |
+| Technical Breadth & Learning | High | Eagerly tackles new paradigms across systems, full-stack, and generative/agentic AI. |
 
 ## Strongest Behaviors
-- **[BEHAVIOR_1]:** [DESCRIPTION]
-- **[BEHAVIOR_2]:** [DESCRIPTION]
-- **[BEHAVIOR_3]:** [DESCRIPTION]
+- **Disciplined Problem-Solving:** Approaches algorithmic and engineering challenges methodically (pattern-wise decomposition, automated testing).
+- **Proactive Risk Mitigation:** Identifies potential failure modes early (security credential leaks, cross-browser visual defects, TLS edge-case bugs).
+- **Team-First Leadership:** Leads by example through high-quality contributions, clear communication, and support for teammates and review workflows.
 
 ## How You Work Best
-- [ENVIRONMENT_PREFERENCE_1]
-- [ENVIRONMENT_PREFERENCE_2]
-- [ENVIRONMENT_PREFERENCE_3]
+- **Collaborative, High-Standard Environments:** Workplaces with structured code reviews, established Git workflows, and proactive communication.
+- **End-to-End Ownership:** Having clear visibility and accountability for features from design/requirements to production deployment.
+- **Fast-Paced Innovation with Rigor:** Teams building modern web applications, AI agents, or backend services without cutting corners on software hygiene.
 
 ## Growth Areas (frame positively in applications)
-- **[AREA_1]:** [HOW_TO_FRAME_IT_POSITIVELY]
-- **[AREA_2]:** [HOW_TO_FRAME_IT_POSITIVELY]
+- **Scale of Production Systems:** While highly proficient with full-stack deployments (Node.js, PostgreSQL, Render) and foundational networking/systems, continues to actively expand experience with high-scale distributed microservices and multi-region cloud infrastructures.
+- **Desire for Thorough Verification:** A strong instinct to test thoroughly and verify edge cases; balances rigorous validation with pragmatic rapid iteration and MVP shipping.
 
 ## Mapping to Job Posting Language
 
 When a job posting mentions these keywords, it's a **strong behavioral fit**:
-- [KEYWORD_OR_PHRASE_THAT_MATCHES_YOUR_STYLE]
-- [ANOTHER_KEYWORD]
+- "Strong ownership", "collaborative team player", "attention to detail", "hands-on problem solver", "fast learner", "curious engineer", "production-ready code", "continuous improvement", "proactive communicator".
 
 When a job posting mentions these, flag as **potential friction** (not deal-breaker):
-- [KEYWORD_OR_PHRASE_THAT_MIGHT_CLASH]
-- [ANOTHER_KEYWORD]
+- "Unstructured environment with no documentation or code reviews", "isolated solo developer without team interaction", "purely maintenance/legacy patch work with zero feature development", "unpaid internship".
 
 ## Management Style Preferences
-- [WHAT_MANAGEMENT_STYLE_WORKS_FOR_YOU]
-- [WHAT_DOESN'T_WORK]
+- **Empowering and Transparent:** Managers who provide clear goals and context, trust developers with implementation decisions, and give constructive feedback.
+- **Avoids:** Unresponsive leadership, micromanagement on trivial syntax without architectural alignment, or chaotic shifting of priorities with no clear vision.
 
 ## Using This in Applications
-- **Cover letters:** [HOW_TO_WEAVE_IN_BEHAVIORAL_STRENGTHS]
-- **CV:** [WHAT_TO_EMPHASIZE]
-- **Interviews:** [WHAT_STAR_EXAMPLES_TO_USE]
-- **Don't overstate:** [WHAT_NOT_TO_CLAIM]
+- **Cover letters:** Emphasize dedication to shipping clean, well-tested features, proactive security consciousness, and enthusiasm for collaborating with product and QA teams.
+- **CV:** Highlight verifiable outcomes: zero-regression production code delivery, credential remediation, end-to-end full-stack and AI project delivery.
+- **Interviews:** Use concrete STAR examples demonstrating initiative, quick learning, and teamwork (Craftedge Academy QA collaboration, Insta Insights security triage, VectorDB implementation).
+- **Don't overstate:** Do not claim decades of distributed cloud architecture experience; focus on demonstrated strengths in full-stack, AI integration, rapid learning, and solid software fundamentals.

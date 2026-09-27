@@ -1,4 +1,4 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Parth Mishra
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
@@ -40,7 +40,7 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Parth Mishra - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -50,13 +50,13 @@
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
+\name{Parth}{Mishra}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\address{Bhopal, India}{}{}
+\phone[mobile]{+91 7985982208}
+\email{parthmishra9942@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/parth-mishra-4b7578242}{LinkedIn}, \href{https://github.com/parthmishra9942}{GitHub}, \href{https://ai-portfolio-beige-xi.vercel.app/}{Portfolio}, \href{https://leetcode.com/u/parth213g}{LeetCode}}
 
 \begin{document}
 
@@ -67,7 +67,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Final-year B.Tech Computer Science Engineering (AI \& ML) student with hands-on experience building full-stack and LLM-integrated applications end-to-end --- from REST APIs and RAG pipelines to conversational Voice AI agents and cloud deployment. Oracle Certified in Agentic AI Foundations. Proven track record of delivering zero-regression client-facing UI, independently identifying and mitigating security credential risks, and architecting vector databases and packet analysis tools in Python. Strong foundation in Data Structures \& Algorithms with consistent LeetCode practice. CGPA: 8.67.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -77,15 +77,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Languages}: Python, C++, JavaScript, TypeScript, SQL
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Backend \& Databases}: Node.js, Express.js, Flask, REST APIs, PostgreSQL, MySQL, JWT Authentication
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Frontend \& Mobile}: React, React Native, Vite, HTML5, CSS3, Cross-Platform Development
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{AI \& Machine Learning}: LLM API Integration (Claude API), Agentic AI, AI Agents, Prompt Engineering, Retrieval-Augmented Generation (RAG), Voice AI, Conversational AI, Voiceflow, Machine Learning, Deep Learning, Computer Vision, NLP
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Tools \& Practices}: Git, GitHub, Unit Testing, Cloud Deployment (Render), Systems Programming \& PCAP Analysis
 
 \end{itemize}
 
@@ -98,31 +98,58 @@
 \begin{itemize}
 
 % --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Oct 2025 - Apr 2026}{Front-End Developer Intern}{Craftedge Academy}{Bhopal, India / Remote}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
+    \item {Delivered responsive, cross-browser-compatible UI components for live client-facing pages by translating design mockups into production-ready HTML, CSS, and JavaScript, achieving successful QA sign-off across all target browsers.}
+    \item {Shipped code changes into a live production codebase with zero introduced regressions by following Git-based version control and team code-review workflows to implement approved features.}
+    \item {Diagnosed and resolved identified cross-browser layout and styling issues to maintain UI consistency across modern web standards.}
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     PROJECTS
+% ============================================================
+
+\section{Technical Projects}
+\vspace{3pt}
+\begin{itemize}
+
+\item{\cventry{2026}{Full-Stack Mobile Analytics Platform}{Insta Insights}{React Native, Node.js, PostgreSQL}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Built a full-stack license-management and analytics app using React Native, Node.js/Express, and PostgreSQL, featuring an admin dashboard for license key generation and revocation, deployed live on Render.}
+    \item {Independently discovered a production credential leak in a repository; immediately rotated exposed database credentials and API secrets to eliminate risk, migrating all configuration to environment variables.}
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{2026}{Vector Database \& RAG Engine}{VectorDB}{Python, Flask, HNSW, Ollama}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
+    \item {Built an in-memory vector database from scratch in Python implementing HNSW, KD-Tree, and Brute-Force search algorithms, exposed via a Flask REST API and verified for search accuracy.}
+    \item {Added a Retrieval-Augmented Generation (RAG) pipeline on top to chunk documents, retrieve relevant context, and generate grounded answers using a local LLM via Ollama.}
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{2025 - 2026}{Conversational Voice AI Demo}{Dental Clinic Voice AI Agent}{Voiceflow, Prompt Engineering, LLMs}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
+    \item {Built and configured an interactive Voice AI agent for dental clinics in Voiceflow, designing prompts and conversational flows to handle real patient queries and clinic-specific scheduling.}
+    \item {Engineered dialogue flows for understanding patient needs and qualifying leads, testing and iterating prompts across diverse patient interaction scenarios.}
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{2025}{AI-Powered Nutrition Estimation App}{AIMealTracker}{React, Vite, JavaScript, Claude API}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Developed a responsive React + Vite web application sending natural language meal descriptions to the Claude API with structured prompts, returning real-time macronutrient estimates.}
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{2025}{Network Traffic Classification System}{DPI Packet Analyzer}{Python, Systems, Networking}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Built a Deep Packet Inspection tool in Python parsing raw packet headers from .pcap files, classifying application traffic via TLS SNI/HTTP metadata, with configurable IP/domain/port blocking.}
+    \item {Architected codebase as a modular package; authored test suites that caught and fixed a domain-classification bug during development.}
 \end{itemize}}}
 
 \end{itemize}
@@ -135,16 +162,20 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\item{\cventry{2023 - 2027}{B.Tech, Computer Science Engineering (AI \& ML)}{VIT Bhopal University}{Bhopal, India}{}{\vspace{1pt}
+In progress, expected 2027. CGPA: 8.67. Focus on Data Structures \& Algorithms, Machine Learning, Systems, and Network Programming. Consistent pattern-wise practice on LeetCode (\href{https://leetcode.com/u/parth213g}{leetcode.com/u/parth213g}).
 }}
 
-\vspace{3pt}
+\end{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
-}}
+% ============================================================
+%     CERTIFICATIONS
+% ============================================================
 
+\section{Certifications}
+\vspace{1pt}
+\begin{itemize}
+\item{\textbf{Oracle Certified Foundations Associate --- Agentic AI} -- Oracle University (Sept 2026).}
 \end{itemize}
 
 % ============================================================
@@ -154,27 +185,7 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
-\end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item {English (fluent / professional working proficiency), Hindi (intermediate).}
 \end{itemize}
 
 % ============================================================

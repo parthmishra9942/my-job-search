@@ -1,10 +1,9 @@
-# Job Application Assistant for [YOUR_NAME]
+# Job Application Assistant for Parth Mishra
 
 <!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Parth Mishra, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,79 +12,73 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Parth Mishra
+- **Location:** Bhopal, India (Open to Remote, Hybrid, and On-site opportunities)
+- **Phone:** +91-7985982208
+- **Email:** parthmishra9942@gmail.com
+- **Portfolio:** https://ai-portfolio-beige-xi.vercel.app/
+- **LinkedIn:** https://linkedin.com/in/parth-mishra-4b7578242
+- **GitHub:** https://github.com/parthmishra9942
+- **LeetCode:** https://leetcode.com/u/parth213g
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
-  04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+  | English | Fluent / Professional working proficiency |
+  | Hindi | Intermediate |
+- **CV language:** English
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Final-year B.Tech Student (Computer Science & Engineering - AI/ML)
+- **LinkedIn headline:** "Software Development Engineer | Full-Stack, Systems & AI/ML"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **B.Tech in Computer Science Engineering (Artificial Intelligence & Machine Learning)** (2023 - Expected 2027) - VIT Bhopal University
+  - CGPA: 8.67
+  - Focus: Data Structures & Algorithms, Systems Programming, Artificial Intelligence & Machine Learning
+  - Achievements: Pattern-wise DSA mastery (Two Pointers, Sliding Window, Prefix Sum, Kadane's Algorithm) with consistent practice on LeetCode
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Front-End Developer Intern** (Oct 2025 - Apr 2026) - **Craftedge Academy** (Bhopal, India / Remote)
+  - Delivered responsive, cross-browser-compatible UI components for live client-facing pages by translating design mockups into production-ready HTML, CSS, and JavaScript, achieving successful QA sign-off across all target browsers.
+  - Shipped code changes into a live production codebase with zero introduced regressions by following Git-based version control and team code-review workflows to implement approved features.
+  - Resolved identified cross-browser layout and styling issues to maintain UI consistency across modern web standards.
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Python, JavaScript, TypeScript, Node.js, Express.js, React, React Native, SQL, PostgreSQL, REST APIs, LLM API Integration (Claude API), Agentic AI, Retrieval-Augmented Generation (RAG), Prompt Engineering, Git
+- **Secondary:** C++, Flask, MySQL, JWT Authentication, Voice AI, Conversational AI, Voiceflow, Machine Learning, Deep Learning, Computer Vision, NLP
+- **Domain:** Full-Stack Web & Mobile Development, AI/LLM Applications & Agents, Systems Programming & Packet Inspection, Data Structures & Algorithms
+- **Software:** Git, GitHub, Render, VS Code, Postman, Ollama, Voiceflow, Vite
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **Oracle Certified Foundations Associate — Agentic AI** - Oracle University - completed Sept 2026
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+<!-- None listed -->
 
-### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+### Awards & Achievements
+- **Academic & Coding Consistency:** CGPA: 8.67 at VIT Bhopal; active and consistent pattern-wise problem solving on LeetCode (leetcode.com/u/parth213g)
+- **Security Incident Resolution:** Independently identified and resolved exposed production database credentials and API secrets in a repository by immediate credential rotation and moving secrets to environment variables
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Consistent & Dedicated:** Follows structured daily problem-solving habits and delivers reliable results from concept to production.
+- **Ownership & Initiative:** Proactively identifies defects and security vulnerabilities without prompting (e.g. independently discovering and mitigating credential leaks).
+- **Strengths:** Strong team collaboration, technical agility across stack layers (frontend to systems/AI), disciplined version control and code review adherence.
+- **Growth areas:** Deepening hands-on production experience with distributed cloud architectures at large scale.
+- **Thrives in:** Collaborative, engineering-focused environments where quality, speed, and continuous learning are valued.
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Building full-stack and AI-driven products end-to-end that solve tangible user problems.
+- Designing intelligent agentic workflows, RAG pipelines, and conversational AI systems.
+- Tackling algorithmic and systems programming challenges.
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- **Software & Technology:** Full-Stack, Backend, SDE, and AI Product companies
+- **AI & Automation / GenAI:** LLM application development, Agentic AI, Conversational AI
+- **SaaS & FinTech:** Scalable web platforms, API-driven services
 
 ### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Unpaid internships or roles without fair compensation
+- Purely non-technical administrative/support positions without software development work
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

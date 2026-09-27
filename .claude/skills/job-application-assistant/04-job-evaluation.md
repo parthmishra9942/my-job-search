@@ -60,9 +60,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Python, JavaScript, TypeScript, Node.js, Express.js, React, React Native, SQL, PostgreSQL, REST APIs, LLM API Integration (Claude API), Agentic AI, RAG, Prompt Engineering, Git
+**Moderate match areas:** C++, Flask, MySQL, JWT Authentication, Voice AI, Conversational AI, Voiceflow, Machine Learning, Deep Learning, Computer Vision, NLP, Systems/Networking
+**Weak match areas:** Enterprise Java/Spring Boot, C#/.NET, Kubernetes at scale, large-scale multi-cloud architecture, DevOps CI/CD pipeline administration
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +74,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Full-Stack Web/Mobile Application Development (React, React Native, Node.js), Front-End Engineering with production QA/code reviews, Generative AI & LLM Integration (RAG pipelines, API integration, Agentic workflows), Data Structures & Algorithms
+**Moderate:** Backend API development (Flask, Express.js), Systems/Network programming (packet parsing, DPI)
+**Entry-level:** Large-scale distributed cloud infrastructure, microservices orchestration
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -91,10 +91,11 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
-- Frequent international travel: FLAG (discuss with user)
+- Remote (worldwide or India): PASS
+- On-site or Hybrid in Bhopal, Bangalore, Pune, Hyderabad, Gurgaon/Delhi NCR, Mumbai: PASS
+- Relocation within India or international with visa sponsorship: PASS / FLAG (discuss with user)
+- Unpaid internship / zero compensation: FAIL (hard deal-breaker)
+- Uncompensated mandatory relocation: FAIL
 
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
@@ -107,19 +108,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Secure an impactful Software Development Engineer (SDE / Full-Stack / AI-ML / Backend) position or graduate/internship program
+- Build and scale production full-stack systems and agentic AI pipelines with rigorous software engineering practices
+- Continuously deepen technical mastery across algorithmic problem solving, distributed systems, and modern AI tooling
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: End-to-end full-stack development, architecting RAG/agent workflows, writing clean APIs, optimizing algorithms, collaborating with dedicated peers
+- Tasks that drain: Repetitive non-technical manual work, unmaintained legacy patching without modern standards, unpaid roles
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Focus on compensated, legitimate engineering roles with clear mentorship and growth; no unpaid internships.
+- **Flexibility**: Open to Remote, Hybrid, or On-site formats.
+- **Professional development**: Highest priority on strong engineering culture, code reviews, and opportunities to build production-grade software.
 
 ### 6. Salary Benchmark (Optional)
 
