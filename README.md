@@ -1,12 +1,12 @@
-<p align="center">
-  <img src="assets/mascot/pip_flight_loop.gif" alt="Autonomous Career Engine Mascot" width="180">
-</p>
-
-# Autonomous Placement & Job Search Workflow Engine 🚀
+# Parth Mishra — Autonomous Placement & Job Search Workflow Engine 🚀
 
 > **Engineered by [Parth Mishra](https://github.com/parthmishra9942)**  
 > *Final-Year B.Tech Computer Science Engineering (AI/ML) @ VIT Bhopal University*  
 > **Connect:** [LinkedIn](https://linkedin.com/in/parth-mishra-4b7578242) | [Portfolio](https://ai-portfolio-beige-xi.vercel.app/) | [LeetCode](https://leetcode.com/u/parth213g) | [Email](mailto:parthmishra9942@gmail.com)
+
+<p align="center">
+  <img src="assets/mascot/pip_flight_loop.gif" alt="Autonomous Career Engine Mascot" width="160">
+</p>
 
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](https://python.org)
 [![LaTeX Engine](https://img.shields.io/badge/LaTeX-XeTeX-navy.svg)](https://miktex.org)
@@ -14,7 +14,7 @@
 [![ATS Compliant](https://img.shields.io/badge/ATS-Strictly%201--Page-green.svg)](documents/cv/Parth_Mishra_Resume.pdf)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-An end-to-end autonomous career operations engine built to automate high-velocity campus placement workflows and off-campus tech applications without compromising quality, authenticity, or ATS compliance.
+An end-to-end autonomous career operations engine engineered by **Parth Mishra** to automate high-velocity campus placement workflows and off-campus tech applications without compromising quality, authenticity, or ATS compliance.
 
 ---
 
@@ -35,6 +35,7 @@ As a final-year Computer Science (AI/ML) undergrad at VIT Bhopal, managing colle
 ```
                   +-------------------------------------------------------+
                   |         AUTONOMOUS CAREER OPERATIONS ENGINE           |
+                  |                   (Parth Mishra)                      |
                   +-------------------------------------------------------+
                                               |
      +----------------------------------------+----------------------------------------+
