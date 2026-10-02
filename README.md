@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/mascot/pip_flight_loop.gif" alt="Autonomous Career Engine Mascot" width="180">
+</p>
+
 # Autonomous Placement & Job Search Workflow Engine 🚀
 
 > **Engineered by [Parth Mishra](https://github.com/parthmishra9942)**  
@@ -101,23 +105,35 @@ As a final-year Computer Science (AI/ML) undergrad at VIT Bhopal, managing colle
 
 ## 🚀 Quickstart Guide
 
-### 1. Clone & Set Up Environment
+### 1. Fork and clone
+
 ```bash
-git clone https://github.com/parthmishra9942/my-job-search.git
+gh repo fork parthmishra9942/my-job-search --clone
 cd my-job-search
+```
+
+> [!IMPORTANT]
+> **A fork of this repo is always public** — GitHub does not allow private forks of
+> public repositories — and `/setup` writes your real personal data (name,
+> contact details, employment history) into **tracked** files.
+> If this copy is for your own job search rather than for contributing changes back,
+> follow [SETUP.md section 8](SETUP.md#8-pulling-upstream-updates-into-your-fork) to configure a private remote.
+
+### 2. Set Up Environment
+```bash
 python -m venv .venv
 .\.venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 2. Compile the 1-Page ATS Resume
+### 3. Compile the 1-Page ATS Resume
 ```bash
 cd documents/cv
 xelatex -interaction=nonstopmode Parth_Mishra_Resume.tex
 python ../../tools/verify_pdf.py Parth_Mishra_Resume.pdf
 ```
 
-### 3. Run the Placement Inbox Scanner
+### 4. Run the Placement Inbox Scanner
 ```bash
 # Set up secure IMAP credentials (stored locally in gitignored config)
 python tools/college_placement_inbox_monitor.py --setup
@@ -126,12 +142,12 @@ python tools/college_placement_inbox_monitor.py --setup
 python tools/college_placement_inbox_monitor.py
 ```
 
-### 4. Run the Multi-Platform Scraper
+### 5. Run the Multi-Platform Scraper
 ```bash
 python tools/multi_platform_scraper.py --target linkedin --role "SDE Intern"
 ```
 
-### 5. Generate the LinkedIn Showcase Video
+### 6. Generate the LinkedIn Showcase Video
 ```bash
 python tools/generate_linkedin_video.py
 ```
