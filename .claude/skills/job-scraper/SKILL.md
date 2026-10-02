@@ -42,48 +42,33 @@ Optional arguments:
 2. Read `job_search_tracker.csv` to extract already-applied companies+roles
 3. Read `search-queries.md` (this directory) for the search strategy
 
-### Step 1: Search
+### Step 1: Multi-Platform Search
 
-Read `search-queries.md` (this directory) for the search strategy. By default, run the top 3 priority query categories. If the user said "broad", run all categories. If the user specified a focus area (e.g. "data science"), prioritize queries from that category.
+Read `search-queries.md` (this directory) for the search strategy. By default, run the top priority query categories across **all supported platforms**. If the user said "broad", run all categories. If the user specified a focus area (e.g. "SDE", "GenAI", "AI/ML", "Backend"), prioritize queries from that category.
 
-**Use the installed CLI tools as the primary search mechanism.** Fall back to `WebSearch` only for portals that do not have a CLI skill, or if `bun` is unavailable on the system.
+**Mandatory Multi-Platform Coverage:**
+Every scrape run must ingest postings from **LinkedIn**, **Naukri**, **Indeed India**, and **Unstop**, combining CLI tools with dedicated web search queries.
 
 #### 1a. Check bun availability
-
 ```bash
 bun --version
 ```
+If bun is available, run the installed portal CLIs. If bun is not available, run all platforms via WebSearch queries.
 
-If this fails (bun not installed), skip to **1c (WebSearch fallback)** for all portals and note the fallback in the Step 5 output.
+#### 1b. Run Installed Portal CLIs (LinkedIn & Freehire)
+Run enabled portal CLIs under `.agents/skills/*/SKILL.md` (specifically `linkedin-search` and `freehire-search`):
+1. **LinkedIn Search:** Query for India and Remote positions using `bun run .agents/skills/linkedin-search/cli/src/cli.ts search --location "India" ...` and `--location "Remote"`.
+2. **Freehire Search:** Query for developer, data/ML, and engineering positions using `bun run .agents/skills/freehire-search/cli/src/cli.ts search --country "IN" ...`.
+3. Scope to recent postings (within the last 14 days) and format as JSON.
 
-#### 1b. Run CLI tools (primary — run these in parallel where possible)
+#### 1c. Run Multi-Portal Web Search (Naukri, Indeed India, Unstop, Wellfound)
+**Do not skip this step.** Run active web searches targeting Indian tech hiring platforms that do not yet have dedicated local CLIs:
+- **Naukri (`site:naukri.com`):** High-volume software engineer, full-stack, and Python backend postings.
+- **Indeed India (`site:in.indeed.com`):** Graduate engineer trainee, SDE-1, and junior developer positions.
+- **Unstop (`site:unstop.com`):** Fresh graduate (2026/2027 batch), early-career tech jobs, off-campus hiring drives, and engineering internships.
+- **Wellfound / Instahyre (`site:wellfound.com` / `site:instahyre.com`):** High-growth AI, GenAI, and product startup roles.
 
-Discover all installed portal CLI skills by reading every `SKILL.md` found under `.agents/skills/*/SKILL.md`. Each file documents that portal's exact CLI flags and usage examples. **Use each portal's own documented interface — do not guess flags.** This approach automatically includes any new portals added via `/add-portal` without requiring changes to this file.
-
-**Honor the `enabled` toggle.** A portal is enabled unless its `SKILL.md` frontmatter sets `enabled: false` (a missing key means enabled — the default). Skip each disabled portal and record it for the Step 5 summary. A fork can thus keep a portal installed but sit out a run without deleting its directory.
-
-For each **enabled** portal skill:
-
-1. Read its `SKILL.md` to find the correct `bun run …` invocation and supported flags.
-2. Translate the query terms from `search-queries.md` into that portal's flag format (e.g. `--key`, `--search-string`, `--query`, filter codes — whatever the portal's SKILL.md specifies).
-3. Scope to the last 14 days using the portal's supported recency **filter** flag (`--jobage`, `--since <YYYY-MM-DD>`, etc. — as documented per portal). A portal with **no recency flag** (jobdanmark offers none) still gets scoped: every portal's search output carries a `date` field, so filter client-side — drop results whose `date` is older than 14 days after the call returns, and never invent a flag the portal's SKILL.md does not document (the CLIs reject unknown flags). `--order PublicationDate` is a sort, and a sort is not a filter — pairing it with a `--limit` is a defensible approximation on a portal that offers nothing better (jobnet), but apply the client-side date filter on top all the same.
-4. Cap results to ~20 per call using the portal's limit flag.
-5. Use `--format json` for machine-readable output.
-
-Run all portal CLI calls in parallel where possible using the Agent tool. Collect all `results` arrays into a single pool for Step 2, keeping each result tagged with its source portal skill (for Step 2 `detail` lookups).
-
-If a CLI tool exits with a non-zero code, log the error message and continue — do not abort the whole search.
-
-#### 1c. WebSearch fallback
-
-Use `WebSearch` for:
-- Portals listed in `search-queries.md` that do **not** have a corresponding directory under `.agents/skills/`
-- Any portal whose CLI fails at runtime
-- When bun is unavailable (Step 1a failed)
-
-Use the site-specific query strings from `search-queries.md` directly as WebSearch queries for these portals.
-
-Tag each fallback result as WebSearch-sourced, keeping the portal tag when the fallback stands in for an installed portal whose CLI failed. Step 4 persists this as the entry's `source`, and Step 5 reports which portals ran on the fallback this run.
+Use the query templates in `search-queries.md` to search each portal, parse the job metadata (title, company, location, URL, date), and merge them with the CLI results into a single candidate pool.
 
 ### Step 2: Fetch & Parse
 

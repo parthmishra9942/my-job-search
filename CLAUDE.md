@@ -44,19 +44,21 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
   - Resolved identified cross-browser layout and styling issues to maintain UI consistency across modern web standards.
 
 ### Technical Skills
-- **Primary:** Python, JavaScript, TypeScript, Node.js, Express.js, React, React Native, SQL, PostgreSQL, REST APIs, LLM API Integration (Claude API), Agentic AI, Retrieval-Augmented Generation (RAG), Prompt Engineering, Git
+- **Primary:** Python, JavaScript, TypeScript, Node.js, Express.js, React, React Native, FastAPI, Pydantic, SQL, PostgreSQL, REST APIs, LLM API Integration (Claude API), Agentic AI, Retrieval-Augmented Generation (RAG), Prompt Engineering, Git
 - **Secondary:** C++, Flask, MySQL, JWT Authentication, Voice AI, Conversational AI, Voiceflow, Machine Learning, Deep Learning, Computer Vision, NLP
 - **Domain:** Full-Stack Web & Mobile Development, AI/LLM Applications & Agents, Systems Programming & Packet Inspection, Data Structures & Algorithms
 - **Software:** Git, GitHub, Render, VS Code, Postman, Ollama, Voiceflow, Vite
 
 ### Certifications
 - **Oracle Certified Foundations Associate — Agentic AI** - Oracle University - completed Sept 2026
+- **Applied Machine Learning in Python** - University of Michigan (Coursera) - completed Jan 2026 (Credential ID: G1Q6ZYPKPWP4, Verify: https://coursera.org/verify/G1Q6ZYPKPWP4)
 
 ### Publications
 <!-- None listed -->
 
 ### Awards & Achievements
-- **Academic & Coding Consistency:** CGPA: 8.67 at VIT Bhopal; active and consistent pattern-wise problem solving on LeetCode (leetcode.com/u/parth213g)
+- **Competitive Programming & Problem Solving:** Solved 200+ algorithmic problems across LeetCode, GeeksforGeeks, and HackerRank (pattern-wise mastery: Two Pointers, Sliding Window, Prefix Sum, Kadane's Algorithm, Binary Search, Trees, Graphs, Hashing). Profile: leetcode.com/u/parth213g
+- **Academic Standing:** CGPA: 8.67 in B.Tech CSE (AI/ML) at VIT Bhopal University
 - **Security Incident Resolution:** Independently identified and resolved exposed production database credentials and API secrets in a repository by immediate credential rotation and moving secrets to environment variables
 
 ### Behavioral Profile

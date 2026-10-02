@@ -34,6 +34,13 @@ linkedin_Profile.pdf
 # fetching service; the .env holding it must never be committed.
 .env
 .env.*
+college_email_config.json
+college_placement_history.json
+college_email_state.json
+personal_email_config.json
+personal_email_state.json
+personal_application_history.json
+documents/proposals/
 
 # Personal photos and signatures
 *.jpg

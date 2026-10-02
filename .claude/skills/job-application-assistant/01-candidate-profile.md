@@ -6,9 +6,12 @@ framework_version: 1.1.1
 
 ## Identity
 - **Name:** Parth Mishra
+- **Registration Number:** 23BAI10539
+- **Neo PAT ID:** V4V7F4Z1
 - **Location:** Bhopal, India
 - **Phone:** +91-7985982208
 - **Email:** parthmishra9942@gmail.com
+- **College Email:** parth.23bai10539@vitbhopal.ac.in
 - **Portfolio:** https://ai-portfolio-beige-xi.vercel.app/
 - **LinkedIn:** https://linkedin.com/in/parth-mishra-4b7578242
 - **GitHub:** https://github.com/parthmishra9942
@@ -39,6 +42,7 @@ Bhopal, India / Remote
 
 ## Independent Projects
 
+- **Autonomous Career & Placement Workflow Engine**: Architected an autonomous agentic pipeline in Python automating multi-portal job discovery across LinkedIn and ATS aggregators, applicant tracking, and semantic ATS keyword matching. Engineered an IMAP daemon parsing incoming campus placement notifications and deadlines, coupled with an automated XeLaTeX compiler producing strictly 1-page ATS-tailored resumes and verified SMTP application dispatch (https://github.com/parthmishra9942/my-job-search).
 - **Insta Insights - Full-Stack Mobile Analytics Platform**: Built a full-stack license-management and analytics app using React Native, Node.js/Express, and PostgreSQL, with an administrative dashboard for secure license key generation and revocation, deployed live on Render. Independently discovered an exposed production credential in a public repo, immediately rotated secrets, and migrated all sensitive configuration into environment variables.
 - **AIMealTracker - AI-Powered Nutrition Estimation App**: Built a React + Vite web application integrating the Claude API via structured prompts to estimate real-time macronutrients (protein, carbs, fats, calories) from free-text meal descriptions.
 - **Dental Clinic Voice AI Agent - Conversational Voice AI Demo**: Built and configured an interactive conversational Voice AI agent for dental clinics using Voiceflow and prompt engineering, handling patient appointment inquiries, qualification leads, and clinic FAQs through natural conversational dialogue.
@@ -62,13 +66,14 @@ Bhopal, India / Remote
 
 ## Certifications
 - **Oracle Certified Foundations Associate — Agentic AI** - Oracle University (Completed Sept 2026)
+- **Applied Machine Learning in Python** - University of Michigan / Coursera (Completed Jan 2026, Credential ID: G1Q6ZYPKPWP4, Verify: https://coursera.org/verify/G1Q6ZYPKPWP4)
 
 ## Publications
 <!-- None listed -->
 
 ## Awards & Achievements
-- **Academic Distinction:** CGPA: 8.67 at VIT Bhopal University.
-- **Algorithmic Consistency:** Active and dedicated pattern-wise problem solving on LeetCode (leetcode.com/u/parth213g).
+- **Academic Distinction:** CGPA: 8.67 in B.Tech CSE (AI/ML) at VIT Bhopal University.
+- **Algorithmic Mastery & Problem Solving:** Solved 200+ algorithmic problems across LeetCode, GeeksforGeeks, and HackerRank (pattern-wise mastery: Two Pointers, Sliding Window, Prefix Sum, Kadane's Algorithm, Binary Search, Trees, Graphs, Hashing). Profile: leetcode.com/u/parth213g
 - **Proactive Security Triage:** Successfully handled and remediated a critical production credential leak without service interruption or data exposure.
 
 ## References
