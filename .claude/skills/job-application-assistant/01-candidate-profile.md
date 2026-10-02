@@ -17,7 +17,7 @@ framework_version: 1.1.1
 - **GitHub:** https://github.com/parthmishra9942
 - **LeetCode:** https://leetcode.com/u/parth213g
 - **Status:** Final-year B.Tech Student (Computer Science & Engineering - AI/ML)
-- **Constraints:** Open to Remote (worldwide / India), Hybrid, and On-site positions in India (e.g. Bangalore, Pune, Hyderabad, Gurgaon/NCR, Mumbai) or international opportunities with sponsorship. No unpaid internships.
+- **Constraints:** Open to Remote (worldwide / India), Hybrid, and On-site positions in India (e.g. Bangalore, Pune, Hyderabad, Gurgaon/NCR, Mumbai) or international opportunities with sponsorship. No unpaid internships. Academic Cutoff Baseline: 10th: 86.7%, 12th: 72.2%, B.Tech CGPA: 8.67 (roles requiring >72.2% in 12th or >86.7% in 10th are ineligible).
 
 ### Languages
 
@@ -28,9 +28,11 @@ framework_version: 1.1.1
 
 ## Education
 
-| Degree | Period | Institution | Key Topics |
+| Degree | Period | Institution | Key Topics / Score |
 |--------|--------|-------------|------------|
 | B.Tech in Computer Science Engineering (Artificial Intelligence & Machine Learning) | 2023 - Expected 2027 | VIT Bhopal University | CGPA: 8.67. Data Structures & Algorithms (pattern-wise mastery on LeetCode), Machine Learning, Deep Learning, NLP, Computer Networks, Operating Systems, Database Management Systems. |
+| Class XII (Senior Secondary) | 2022 - 2023 | CBSE Board | 72.2% |
+| Class X (Secondary) | 2020 - 2021 | CBSE Board | 86.7% |
 
 ## Professional Experience
 

@@ -48,6 +48,8 @@ CANDIDATE_NAME = "Parth Mishra"
 CANDIDATE_REG_NO = "23BAI10539"
 CANDIDATE_NEO_ID = "V4V7F4Z1"
 CANDIDATE_CGPA = 8.67
+CANDIDATE_10TH = 86.7
+CANDIDATE_12TH = 72.2
 CANDIDATE_BATCH = 2027
 CANDIDATE_BRANCH = "CSE (AI/ML)"
 
@@ -98,7 +100,19 @@ CTC_PATTERN = re.compile(
     re.IGNORECASE,
 )
 CGPA_CUTOFF_PATTERN = re.compile(
-    r"(?:cgpa|pointer|percentage)\s*(?:cutoff|criterion|requirement|criteria|>=|>|minimum|min)?\s*[:\-]?\s*(\d+(?:\.\d+)?)",
+    r"(?:cgpa|pointer|degree|in\s*pursuing\s*degree)\s*(?:cutoff|criterion|requirement|criteria|>=|>|minimum|min)?\s*[:\-–—]?\s*(\d+(?:\.\d+)?)",
+    re.IGNORECASE,
+)
+X_XII_CUTOFF_PATTERN = re.compile(
+    r"(?:%?\s*(?:in\s*)?(?:X\s*(?:and|&|\/)\s*XII|10th\s*(?:and|&|\/)\s*12th|10th\s*&\s*12th|class\s*10\s*(?:and|&|\/)\s*12))\s*[:\-–—]?\s*(\d+(?:\.\d+)?)\s*%",
+    re.IGNORECASE,
+)
+XII_CUTOFF_PATTERN = re.compile(
+    r"(?:(?:XII|12th|class\s*12|inter|higher\s*secondary)\b[^\n\r\.\;]{0,35}?(?:cutoff|criterion|requirement|criteria|>=|>|minimum|min)?\s*[:\-–—]?\s*)(\d+(?:\.\d+)?)\s*%",
+    re.IGNORECASE,
+)
+X_CUTOFF_PATTERN = re.compile(
+    r"(?:(?:X|10th|class\s*10|ssc|matric)\b[^\n\r\.\;]{0,35}?(?:cutoff|criterion|requirement|criteria|>=|>|minimum|min)?\s*[:\-–—]?\s*)(\d+(?:\.\d+)?)\s*%",
     re.IGNORECASE,
 )
 DEADLINE_PATTERN = re.compile(
@@ -238,15 +252,58 @@ def parse_placement_email(subject: str, sender: str, body: str, date_str: str = 
     cgpa_match = CGPA_CUTOFF_PATTERN.search(body)
     cgpa_cutoff = float(cgpa_match.group(1)) if cgpa_match else None
 
+    # Check 10th & 12th Cutoffs
+    cutoff_10th = None
+    cutoff_12th = None
+    combo_match = X_XII_CUTOFF_PATTERN.search(body)
+    if combo_match:
+        val = float(combo_match.group(1))
+        cutoff_val = val * 10 if val < 10 else val
+        cutoff_10th = cutoff_val
+        cutoff_12th = cutoff_val
+    else:
+        m10 = X_CUTOFF_PATTERN.search(body)
+        if m10:
+            v10 = float(m10.group(1))
+            cutoff_10th = v10 * 10 if v10 < 10 else v10
+        m12 = XII_CUTOFF_PATTERN.search(body)
+        if m12:
+            v12 = float(m12.group(1))
+            cutoff_12th = v12 * 10 if v12 < 10 else v12
+
     # Check eligibility
     eligible = True
-    eligibility_note = "Eligible"
+    ineligible_reasons = []
+    eligibility_notes = []
+
     if cgpa_cutoff:
-        if CANDIDATE_CGPA >= cgpa_cutoff:
-            eligibility_note = f"Eligible (CGPA {CANDIDATE_CGPA} >= {cgpa_cutoff})"
+        effective_cgpa_cutoff = cgpa_cutoff / 10 if cgpa_cutoff > 10 else cgpa_cutoff
+        if CANDIDATE_CGPA >= effective_cgpa_cutoff:
+            eligibility_notes.append(f"CGPA {CANDIDATE_CGPA} >= {effective_cgpa_cutoff}")
         else:
             eligible = False
-            eligibility_note = f"Ineligible (Cutoff {cgpa_cutoff} > {CANDIDATE_CGPA})"
+            ineligible_reasons.append(f"Cutoff {effective_cgpa_cutoff} > CGPA {CANDIDATE_CGPA}")
+
+    if cutoff_12th:
+        if CANDIDATE_12TH >= cutoff_12th:
+            eligibility_notes.append(f"12th {CANDIDATE_12TH}% >= {cutoff_12th}%")
+        else:
+            eligible = False
+            ineligible_reasons.append(f"12th Cutoff {cutoff_12th}% > {CANDIDATE_12TH}%")
+
+    if cutoff_10th:
+        if CANDIDATE_10TH >= cutoff_10th:
+            eligibility_notes.append(f"10th {CANDIDATE_10TH}% >= {cutoff_10th}%")
+        else:
+            eligible = False
+            ineligible_reasons.append(f"10th Cutoff {cutoff_10th}% > {CANDIDATE_10TH}%")
+
+    if eligible:
+        eligibility_note = "Eligible"
+        if eligibility_notes:
+            eligibility_note += f" ({', '.join(eligibility_notes)})"
+    else:
+        eligibility_note = f"Ineligible: {', '.join(ineligible_reasons)}"
 
     # Batch check
     batches = BATCH_PATTERN.findall(body)
